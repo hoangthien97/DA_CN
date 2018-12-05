@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.ThanhToan.ThanhToanActivity"
+    android:background="@color/colorGray">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarThanhToan"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"></android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/whiteColor"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Gửi đến : "
+            android:textColor="@color/colorFacebook" />
+
+        <EditText
+            android:id="@+id/edtTenNguoiNhan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_thanhtoan"
+            android:hint="Tên người nhận :"
+            android:textSize="12sp"
+            android:textColor="#f000"/>
+
+        <EditText
+            android:id="@+id/edtDiaChi"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_thanhtoan"
+            android:gravity="top"
+            android:hint="Địa chỉ giao hàng :"
+            android:textSize="12sp"
+            android:textColor="#f000"/>
+
+        <EditText
+            android:id="@+id/edtSoDT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_thanhtoan"
+            android:hint="Số điện thoại :"
+            android:textSize="12sp"
+            android:inputType="number"
+            android:textColor="#f000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Chọn hình thức thanh toán :"
+            android:textColor="@color/colorFacebook" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/img_btnCOD"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@color/whiteColor"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ship" />
+
+                <TextView
+                    android:id="@+id/txtThanhToanKhiNhanHang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thanh toán khi nhận hàng"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/img_btnChuyenKhoan"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@color/whiteColor"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/visa" />
+
+                <TextView
+                    android:id="@+id/txtChuyenKhoan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chuyển khoản"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/ckbCamKet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Tôi cam kết thông tin trên là chính xác" />
+
+        <Button
+            android:id="@+id/btn_ThanhToan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="10dp"
+            android:background="@color/bgLogo"
+            android:padding="10dp"
+            android:text="thanh toán" />
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

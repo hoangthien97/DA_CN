@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#f74d18</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="bgToolbar">#ff5520</color>
+    <color name="colorGray">#CCC</color>
+    <color name="bgLogo">#ff5722</color>  <!--#183545-->
+    <color name="colorFacebook">#4a6ea9</color>
+    <color name="colorGoogle">#da4835</color>
+    <color name="colorRed">#ff0505</color>  
+    <color name="tranparentBlack">#b8515151</color>
+    <color name="whiteColor">#fff</color>
+    <color name="colorSliderActive">#8095a1</color>
+
+</resources>

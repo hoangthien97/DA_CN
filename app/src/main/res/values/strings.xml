@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TH Store</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open">Mở</string>
+    <string name="close">Đóng</string>
+    <string name="facebook_app_id">2312654875415263</string>
+    <string name="google_plus_client">681749547704-hd123pujii0i4j1qk4efoaopdn3dvops.apps.googleusercontent.com</string>
+
+    <string-array name="planets_array">
+        <item>Theo tên</item>
+        <item>Theo giá</item>
+
+    </string-array>
+
+</resources>

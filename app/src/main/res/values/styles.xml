@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/bgToolbar</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">#f70000</item>
+        <item name="android:textColorPrimary">@color/whiteColor</item>
+        <item name="coordinatorLayoutStyle">@style/Widget.Design.CoordinatorLayout</item>
+    </style>
+    
+    <style name="menuitemcolor" parent="AppTheme">
+        <item name="android:textColorPrimary">#f000</item>
+        <item name="drawerArrowStyle">@style/colorDrawerToggle</item>
+    </style>
+    
+    <style name="colorDrawerToggle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">#fff</item>
+    </style>
+    
+    <style name="capfal" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+    </style>
+    
+    <style name="StarRatingBar" parent="AppTheme">
+        <item name="android:colorControlNormal">@color/bgLogo</item>
+    </style>
+
+    <style name="AlertDialogCustomTheme" parent="android:Theme.Dialog">
+        <item name="android:textColor">#f000</item>
+    </style>
+
+    <declare-styleable name="PasswordEditText">
+        <attr name="useStrike" format="boolean"/>
+        <attr name="useValidate" format="boolean"/>
+    </declare-styleable>
+
+</resources>

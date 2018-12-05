@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical"
+        tools:context=".View.DangNhap_DangKy.Fragment.DangKyFragment">
+
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:text="Điền tất cả các mục sau"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/dangky_inputEdtHoTen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <EditText
+                android:id="@+id/dangky_edtHoTenDK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#f000"
+                android:hint="Họ tên của bạn"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/dangky_inputEdtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <EditText
+                android:id="@+id/dangky_edtEmailDK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email của bạn"
+                android:textColor="#f000"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/dangky_inputEdtMatKhau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <com.thienthien97.thstore.CustomView.PasswordEditText
+                android:id="@+id/dangky_edtMatKhauDK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mật khẩu"
+                android:inputType="textPassword"
+                android:textColor="#f000"
+                app:useStrike="true"
+                app:useValidate="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mật khẩu phải ít nhất 6 ký tự và một chữ hoa"
+            android:layout_margin="10dp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/dangky_inputEdtNhapLaiMatKhau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <com.thienthien97.thstore.CustomView.PasswordEditText
+                android:id="@+id/dangky_edtNhapLaiMatKhauDK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhập lại mật khẩu"
+                android:inputType="textPassword"
+                android:textColor="#f000"
+                app:useStrike="true"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/dangky_sEmailDocQuyen"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Tôi muốn nhận các khuyến mãi qua Email"
+            android:checked="true"/>
+
+        <Button
+            android:id="@+id/dangky_btnDangKy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đăng ký"
+            android:padding="10dp"
+            android:background="@color/bgLogo"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đăng ký bằng"
+            android:gravity="center"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnDangNhapFaceBook"
+                android:text="Facebook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/facebookiconsmall"
+                android:layout_weight="1"
+                android:textColor="@color/colorFacebook"
+                android:background="@drawable/boder_facebook"
+                android:layout_margin="10dp"/>
+
+            <Button
+                android:id="@+id/btnDangNhapGoogle"
+                android:text="Google"
+                android:textColor="@color/colorGoogle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_google"
+                android:drawableLeft="@drawable/googleplussmall"
+                android:layout_weight="1"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
